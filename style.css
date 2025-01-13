@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #2E4057;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 1200px; /* Increases page width */
+    padding: 1rem;
+}
+
+footer {
+    background: #2E4057;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Reusable Layouts */
+.container {
+    margin: 2rem auto;
+    max-width: 800px; /* Standard width for sections */
+    text-align: left;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #EE583F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #C7B65E;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Subscribe Form */
+#subscribe-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#subscribe-form input {
+    width: 250px;
+}
+
+/* Gallery */
+#gallery {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+
+.product {
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* About Us */
+#about h2, #about h3 {
+    color: #2E4057;
+}
+
+/* Contact and Feedback Forms */
+#feedback-form, #contact-us {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+#contact-us h2, #feedback-form h2 {
+    color: #2E4057;
+    margin-bottom: 10px;
+}
+
+#contact-us p, #feedback-form p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    form input, form textarea {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
