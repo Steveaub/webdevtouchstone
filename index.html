@@ -3,37 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Haven Bookstore</title>
+    <title>Homepage - Book Haven Bookstore</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Book Haven Bookstore</h1>
+        <div class="logo-container">
+            <img src="screenshot1.png" alt="Book Haven Bookstore Logo" class="logo">
+        </div>
+        <h1>Welcome to Book Haven Bookstore</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="welcome">
-            <h2>Welcome to Book Haven!</h2>
-            <p>Your one-stop shop for books, magazines, and more.</p>
+        <!-- Client Highlights -->
+        <section id="highlights">
+            <h2>Why Choose Book Haven?</h2>
+            <p>Discover a haven for book enthusiasts, offering a curated selection of books, magazines, and unique stationery.</p>
+            <ul>
+                <li>Wide selection of rare and popular titles</li>
+                <li>Friendly community events and book signings</li>
+                <li>Exclusive membership perks and discounts</li>
+            </ul>
         </section>
-        <section id="subscribe">
-            <h3>Subscribe to Our Newsletter</h3>
-            <form id="subscribe-form">
-                <input type="email" id="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
+
+        <!-- Shopping Promos -->
+        <section id="promotions">
+            <h2>Current Promotions</h2>
+            <div class="promo-grid">
+                <div class="promo">
+                    <h3>Holiday Special</h3>
+                    <p>Buy 2, get 1 free on all fiction books!</p>
+                </div>
+                <div class="promo">
+                    <h3>Free Tote Bag</h3>
+                    <p>Spend $50 or more and get a free tote bag!</p>
+                </div>
+                <div class="promo">
+                    <h3>Stationery Discount</h3>
+                    <p>Save 20% on planners and notebooks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product/Item Images -->
+        <section id="product-images">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="Book Haven Bookstore Gallery Images/Client3_Book1.png" alt="Brie Mine 4Ever">
+                    <h3>Brie Mine 4Ever</h3>
+                    <p>A book for cheese lovers. Price: $12.00</p>
+                </div>
+                <div class="product">
+                    <img src="Book Haven Bookstore Gallery Images/Client3_Book2.png" alt="Glory Riders">
+                    <h3>Glory Riders</h3>
+                    <p>A book about bikers. Price: $15.00</p>
+                </div>
+                <div class="product">
+                    <img src="Book Haven Bookstore Gallery Images/Client3_Book3.png" alt="Sorcerer’s Shadowed Chronicles">
+                    <h3>Sorcerer’s Shadowed Chronicles</h3>
+                    <p>A fantasy adventure. Price: $18.00</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Perks -->
+        <section id="shopping-perks">
+            <h2>Shopping Perks</h2>
+            <ul>
+                <li>Free shipping on orders over $50</li>
+                <li>Easy returns within 30 days</li>
+                <li>Exclusive discounts for members</li>
+            </ul>
+        </section>
+
+        <!-- Categories of Products -->
+        <section id="categories">
+            <h2>Explore Our Categories</h2>
+            <div class="category-grid">
+                <div class="category">
+                    <h3>Books</h3>
+                    <p>Discover a wide range of fiction, non-fiction, and children's books.</p>
+                </div>
+                <div class="category">
+                    <h3>Magazines</h3>
+                    <p>Stay up-to-date with the latest issues of popular magazines.</p>
+                </div>
+                <div class="category">
+                    <h3>Stationery</h3>
+                    <p>Unique planners, notebooks, and office essentials.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Book Haven Bookstore</p>
+        <p>&copy; 2025 Book Haven Bookstore. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

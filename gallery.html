@@ -7,43 +7,109 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
+        <div class="logo-container">
+            <img src="Book Haven Bookstore Gallery Images/Client3_Logo.png" alt="Book Haven Logo" class="logo">
+        </div>
         <h1>Book Haven Bookstore</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
+        <!-- Gallery Section -->
         <section id="gallery">
             <h2>Our Products</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="path/to/image1.jpg" alt="Product 1">
-                    <p>Product 1 Description</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="path/to/image2.jpg" alt="Product 2">
-                    <p>Product 2 Description</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="path/to/image3.jpg" alt="Product 3">
-                    <p>Product 3 Description</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <!-- Add more products as needed -->
+            <!-- View Cart Button -->
+            <div class="cart-controls">
+                <button id="view-cart" class="btn-primary">View Shopping Cart</button>
             </div>
+
+            <!-- Product Table -->
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Book Haven Bookstore Gallery Images/Client3_Book1.png" alt="Brie Mine 4Ever"></td>
+                        <td>Brie Mine 4Ever</td>
+                        <td>A book for cheese lovers.</td>
+                        <td>$12.00</td>
+                        <td><button class="add-to-cart" data-name="Brie Mine 4Ever" data-price="12">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Book Haven Bookstore Gallery Images/Client3_Book2.png" alt="Glory Riders"></td>
+                        <td>Glory Riders</td>
+                        <td>A book about bikers.</td>
+                        <td>$15.00</td>
+                        <td><button class="add-to-cart" data-name="Glory Riders" data-price="15">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Book Haven Bookstore Gallery Images/Client3_Book3.png" alt="Sorcerer’s Shadowed Chronicles"></td>
+                        <td>Sorcerer’s Shadowed Chronicles</td>
+                        <td>A fantasy book.</td>
+                        <td>$18.00</td>
+                        <td><button class="add-to-cart" data-name="Sorcerer’s Shadowed Chronicles" data-price="18">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Book Haven Bookstore Gallery Images/Client3_Magazine1.png" alt="Ball Magazine"></td>
+                        <td>Ball Magazine</td>
+                        <td>About pickleball.</td>
+                        <td>$8.00</td>
+                        <td><button class="add-to-cart" data-name="Ball Magazine" data-price="8">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Book Haven Bookstore Gallery Images/Client3_Magazine2.png" alt="Travel Magazine"></td>
+                        <td>Travel Magazine</td>
+                        <td>For travelers.</td>
+                        <td>$10.00</td>
+                        <td><button class="add-to-cart" data-name="Travel Magazine" data-price="10">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Book Haven Bookstore Gallery Images/Client3_Magazine3.png" alt="Eat. Magazine"></td>
+                        <td>Eat. Magazine</td>
+                        <td>For foodies.</td>
+                        <td>$9.00</td>
+                        <td><button class="add-to-cart" data-name="Eat. Magazine" data-price="9">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Book Haven Bookstore</p>
+        <p>&copy; 2025 Book Haven Bookstore. All Rights Reserved.</p>
     </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart" class="btn-secondary">Clear Cart</button>
+            <button id="process-order" class="btn-primary">Process Order</button>
+        </div>
+    </div>
+
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
